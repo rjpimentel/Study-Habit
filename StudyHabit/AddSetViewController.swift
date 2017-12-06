@@ -1,6 +1,6 @@
 //
 //  AddSetViewController.swift
-//  Alarm-ios-swift
+//  StudyHabit
 //
 //  Created by RJ Pimentel on 11/29/17.
 

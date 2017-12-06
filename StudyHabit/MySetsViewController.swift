@@ -1,9 +1,8 @@
 //
 //  ChooseSetsViewController.swift
-//  Alarm-ios-swift
+//  StudyHabit
 //
-//  Created by RJ Pimentel on 11/26/17.
-//  Copyright © 2017 LongGames. All rights reserved.
+//  Created by RJ Pimentel on 11/26/17
 //
 
 import UIKit

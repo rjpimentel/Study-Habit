@@ -34,6 +34,12 @@
 		301DA2791FD5F7E2004B91FA /* StudyHabitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301DA2781FD5F7E2004B91FA /* StudyHabitTests.swift */; };
 		301DA2841FD5F7E2004B91FA /* StudyHabitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301DA2831FD5F7E2004B91FA /* StudyHabitUITests.swift */; };
 		30D82AA31FD7605700784CAD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D82AA21FD7605700784CAD /* QuizViewController.swift */; };
+		30D82AA81FD7CDD900784CAD /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D82AA51FD7CDD800784CAD /* alarm.png */; };
+		30D82AA91FD7CDD900784CAD /* alarm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D82AA61FD7CDD900784CAD /* alarm@2x.png */; };
+		30D82AAA1FD7CDD900784CAD /* alarm@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D82AA71FD7CDD900784CAD /* alarm@3x.png */; };
+		30D82AB51FD7CF7A00784CAD /* books.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D82AB21FD7CF7900784CAD /* books.png */; };
+		30D82AB61FD7CF7A00784CAD /* books@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D82AB31FD7CF7900784CAD /* books@2x.png */; };
+		30D82AB71FD7CF7A00784CAD /* books@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D82AB41FD7CF7A00784CAD /* books@3x.png */; };
 		3A65E5907CE078870F061D0F /* Pods_StudyHabit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AB4ACED8297B58BD5CDEE5 /* Pods_StudyHabit.framework */; };
 		B092616AA3AD74D96F8233CA /* Pods_StudyHabitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F38FC6EE28F8871BC123300 /* Pods_StudyHabitUITests.framework */; };
 		D2366A91E06F69EFF7FA3213 /* Pods_StudyHabitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029211A58517C2E65BDC7FF1 /* Pods_StudyHabitTests.framework */; };
@@ -92,6 +98,12 @@
 		301DA2831FD5F7E2004B91FA /* StudyHabitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyHabitUITests.swift; sourceTree = "<group>"; };
 		301DA2851FD5F7E2004B91FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30D82AA21FD7605700784CAD /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		30D82AA51FD7CDD800784CAD /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
+		30D82AA61FD7CDD900784CAD /* alarm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alarm@2x.png"; sourceTree = "<group>"; };
+		30D82AA71FD7CDD900784CAD /* alarm@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alarm@3x.png"; sourceTree = "<group>"; };
+		30D82AB21FD7CF7900784CAD /* books.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = books.png; path = ../../../../Desktop/books.png; sourceTree = "<group>"; };
+		30D82AB31FD7CF7900784CAD /* books@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "books@2x.png"; path = "../../../../Desktop/books@2x.png"; sourceTree = "<group>"; };
+		30D82AB41FD7CF7A00784CAD /* books@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "books@3x.png"; path = "../../../../Desktop/books@3x.png"; sourceTree = "<group>"; };
 		4F38FC6EE28F8871BC123300 /* Pods_StudyHabitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyHabitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD627C3033CCA120BBB59D2 /* Pods-StudyHabit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyHabit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyHabit/Pods-StudyHabit.debug.xcconfig"; sourceTree = "<group>"; };
 		C2AB4ACED8297B58BD5CDEE5 /* Pods_StudyHabit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyHabit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +173,8 @@
 				301D61851FD5FC0E00B18ABD /* QuizSetModel.swift */,
 				301DA2641FD5F7E2004B91FA /* Main.storyboard */,
 				30D82AA21FD7605700784CAD /* QuizViewController.swift */,
+				30D82AAB1FD7CDDE00784CAD /* bookImages */,
+				30D82AA41FD7CDBA00784CAD /* alarmImages */,
 				301DA26A1FD5F7E2004B91FA /* Assets.xcassets */,
 				301DA26F1FD5F7E2004B91FA /* Info.plist */,
 				301DA2671FD5F7E2004B91FA /* StudyHabit.xcdatamodeld */,
@@ -208,6 +222,26 @@
 				301D61861FD5FC0E00B18ABD /* WeekdaysViewController.swift */,
 			);
 			path = Alarm;
+			sourceTree = "<group>";
+		};
+		30D82AA41FD7CDBA00784CAD /* alarmImages */ = {
+			isa = PBXGroup;
+			children = (
+				30D82AA51FD7CDD800784CAD /* alarm.png */,
+				30D82AA61FD7CDD900784CAD /* alarm@2x.png */,
+				30D82AA71FD7CDD900784CAD /* alarm@3x.png */,
+			);
+			path = alarmImages;
+			sourceTree = "<group>";
+		};
+		30D82AAB1FD7CDDE00784CAD /* bookImages */ = {
+			isa = PBXGroup;
+			children = (
+				30D82AB21FD7CF7900784CAD /* books.png */,
+				30D82AB31FD7CF7900784CAD /* books@2x.png */,
+				30D82AB41FD7CF7A00784CAD /* books@3x.png */,
+			);
+			path = bookImages;
 			sourceTree = "<group>";
 		};
 		74C2064B94E17DCAFCD15283 /* Frameworks */ = {
@@ -353,6 +387,12 @@
 				301D61A01FD5FCCA00B18ABD /* bell.mp3 in Resources */,
 				301DA2661FD5F7E2004B91FA /* Main.storyboard in Resources */,
 				301D619F1FD5FCCA00B18ABD /* tickle.mp3 in Resources */,
+				30D82AA91FD7CDD900784CAD /* alarm@2x.png in Resources */,
+				30D82AB61FD7CF7A00784CAD /* books@2x.png in Resources */,
+				30D82AAA1FD7CDD900784CAD /* alarm@3x.png in Resources */,
+				30D82AA81FD7CDD900784CAD /* alarm.png in Resources */,
+				30D82AB51FD7CF7A00784CAD /* books.png in Resources */,
+				30D82AB71FD7CF7A00784CAD /* books@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

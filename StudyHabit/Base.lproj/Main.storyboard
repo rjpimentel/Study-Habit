@@ -14,7 +14,7 @@
         <scene sceneID="gbY-cu-bM4">
             <objects>
                 <navigationController id="mRm-tb-2g0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Alarms" id="TWF-xO-Nrx"/>
+                    <tabBarItem key="tabBarItem" title="Alarms" image="alarm.png" id="TWF-xO-Nrx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hgI-F4-eqi">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -166,7 +166,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="ggS-R8-mgu">
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search Quizlet" id="ggS-R8-mgu">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -214,7 +214,7 @@
         <scene sceneID="f7Y-Yc-xHE">
             <objects>
                 <navigationController title="Sets Navigation Controller" id="GJ0-hy-cGX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sets" id="Hie-D1-xdb"/>
+                    <tabBarItem key="tabBarItem" title="Sets" image="books.png" id="Hie-D1-xdb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aok-ke-Ir0">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -596,6 +596,10 @@
             <point key="canvasLocation" x="2746.875" y="-247.18309859154928"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alarm.png" width="25" height="25"/>
+        <image name="books.png" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="vZt-5w-FkZ"/>
     </inferredMetricsTieBreakers>
