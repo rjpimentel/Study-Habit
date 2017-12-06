@@ -85,6 +85,7 @@ class QuizViewController: UIViewController, UITextFieldDelegate {
             self.performSegue(withIdentifier: "toMain", sender: nil)
         }
         currCard = cards[index]
+        cards.remove(at: index)
         updateUI()
         
     }
