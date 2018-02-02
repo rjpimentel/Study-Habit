@@ -15,6 +15,8 @@ class QuizViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var termLabel: UILabel!
     
+    @IBOutlet weak var correctionLabel: UILabel!
+    
     @IBOutlet weak var definitionField: UITextField!
     
     var cards: [QuizCard] = []
@@ -22,7 +24,12 @@ class QuizViewController: UIViewController, UITextFieldDelegate {
     var progress: Int = 0 {
         didSet {
             if progress == 3 {
-                self.performSegue(withIdentifier: "toMain", sender: nil)
+                let alertController = UIAlertController(title: "Nice!", message: "Have a nice day!", preferredStyle: .alert)
+                let alertAction = UIAlertAction(title: "Exit", style: .default) { (action) in
+                    self.performSegue(withIdentifier: "toMain", sender: nil)
+                }
+                alertController.addAction(alertAction)
+                self.present(alertController, animated: true, completion: nil)
             }
         }
     }
@@ -38,12 +45,32 @@ class QuizViewController: UIViewController, UITextFieldDelegate {
         if currCard.answer == text {
             progress += 1
             progressLabel.textColor = UIColor.green
+            correctionLabel.text = ""
         } else {
+            correctionLabel.text = currCard.answer
             progressLabel.textColor = UIColor.red
         }
         nextCard()
     }
     
+    
+
+    func nextCard() {
+        let index = Int(arc4random_uniform(UInt32(cards.count)))
+        if cards.count == 0 {
+            self.performSegue(withIdentifier: "toMain", sender: nil)
+        }
+        currCard = cards[index]
+        cards.remove(at: index)
+        updateUI()
+        
+    }
+    
+    func updateUI() {
+        termLabel.text! = currCard.question
+        progressLabel.text! = "\(progress)/3"
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -77,22 +104,6 @@ class QuizViewController: UIViewController, UITextFieldDelegate {
             print("Fetching data failed :(")
         }
         nextCard()
-    }
-
-    func nextCard() {
-        let index = Int(arc4random_uniform(UInt32(cards.count)))
-        if cards.count == 0 {
-            self.performSegue(withIdentifier: "toMain", sender: nil)
-        }
-        currCard = cards[index]
-        cards.remove(at: index)
-        updateUI()
-        
-    }
-    
-    func updateUI() {
-        termLabel.text! = currCard.question
-        progressLabel.text! = "\(progress)/3"
     }
     
     override func didReceiveMemoryWarning() {

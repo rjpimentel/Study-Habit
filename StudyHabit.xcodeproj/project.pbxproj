@@ -345,6 +345,11 @@
 					301DA25C1FD5F7E2004B91FA = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					301DA2731FD5F7E2004B91FA = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -749,6 +754,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8L2BC5XVN3;
 				INFOPLIST_FILE = StudyHabit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimento.StudyHabit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -765,6 +771,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8L2BC5XVN3;
 				INFOPLIST_FILE = StudyHabit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimento.StudyHabit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

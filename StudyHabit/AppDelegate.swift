@@ -14,7 +14,6 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, AVAudioPlayerDelegate, AlarmApplicationDelegate{
-
     var window: UIWindow?
     var audioPlayer: AVAudioPlayer?
     let alarmScheduler: AlarmSchedulerDelegate = Scheduler()
@@ -80,6 +79,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AVAudioPlayerDelegate, Al
          */
         
         return true
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
     }
    
     //receive local notification when app in foreground
